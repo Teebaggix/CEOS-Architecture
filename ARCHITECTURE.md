@@ -1,20 +1,22 @@
 # CEOS: Campus Economy Operating System
 
 **Status:** Architecture & UI/UX Locked. Engineering Sprints Commencing.
-**[span_0](start_span)Network Phase 1 Deployment:** FUNAAB Cluster, Nigeria[span_0](end_span).
+**(start_span)Network Phase 1 Deployment:** FUNAAB Cluster, Nigeria(end_span).
 
 ## The Coordination Layer for Campus Economies
-[span_1](start_span)Every campus in Nigeria operates as a closed micro-economy[span_1](end_span). [span_2](start_span)Yet, despite this density, there is no unified discovery layer, no structured payment record, and no map of capital flow[span_2](end_span). 
+(start_span)Every campus in Nigeria operates as a closed micro-economy(end_span).
+(start_span)Yet, despite this density, there is no unified discovery layer, no structured payment record, and no map of capital flow(end_span). 
 
-[span_3](start_span)CEOS is not a consumer fintech application[span_3](end_span). [span_4](start_span)It is the coordination layer that has always been missing from the campus economy[span_4](end_span). [span_5](start_span)By sitting directly above existing payment rails (OPay, PalmPay, Kuda) and deploying a closed-loop Aggregator Wallet sub-ledger, CEOS guarantees instant, zero-fee, zero-network-failure transactions at the point of sale[span_5](end_span).
+(start_span)CEOS is not a consumer fintech application(end_span).(start_span)It is the coordination layer that has always been missing from the campus economy(end_span).(start_span)By sitting directly above existing payment rails (OPay, PalmPay, Kuda) and deploying a closed-loop Aggregator Wallet sub-ledger, CEOS guarantees instant, zero-fee, zero-network-failure transactions at the point of sale(end_span).
 
 ## Technical Architecture (Phase 1)
 
 ### 1. The Interface (React Native / Expo)
-[span_6](start_span)[span_7](start_span)A single codebase with conditional rendering based on user role (Student Node vs. Vendor Hub)[span_6](end_span)[span_7](end_span). [span_8](start_span)The interface reflects the precision of an infrastructure layer, utilizing a strict structural grid, deep navy/charcoal backgrounds, and glassmorphic modal overlays to maintain visual context of the underlying vendor registry map[span_8](end_span).
+(start_span)A single codebase with conditional rendering based on user role (Student Node vs. Vendor Hub)(end_span).
+(start_span)The interface reflects the precision of an infrastructure layer, utilizing a strict structural grid, deep navy/charcoal backgrounds, and glassmorphic modal overlays to maintain visual context of the underlying vendor registry map(end_span).
 
 ### 2. The Internal Sub-Ledger (Node.js / PostgreSQL)
-[span_9](start_span)To guarantee <500ms transaction speeds, CEOS utilizes an atomic sub-ledger[span_9](end_span).
+(start_span)To guarantee <500ms transaction speeds, CEOS utilizes an atomic sub-ledger[span_9](end_span).
 - [span_10](start_span)[span_11](start_span)Transactions at the point-of-sale are internal balance transfers, eliminating external NIBSS network calls and inter-bank settlement delays from the checkout experience entirely[span_10](end_span)[span_11](end_span).
 - [span_12](start_span)[span_13](start_span)Fiat liquidity is aggregated via BaaS integrations (Bloc, Monnify, or Kuda API) for end-of-day batch settlement to vendor bank accounts[span_12](end_span)[span_13](end_span).
 
