@@ -31,6 +31,5 @@ The strategy relies on B2B2C physical vendor lock-in. Vendor density is the prim
 ## Repository Contents
 - `CEOS_Master_Strategy.docx`: The complete Master Strategy & Execution Document (PRD, GTM, Ledger Schema, and Rollout Plan).
 - `CEOS_Deployment_Thesis.pdf`: The 10-slide architectural pitch deck.
-- `/designs/`: High-fidelity UI glassmorphism interfaces and structural grid mockups.
 
 *Engineering commits for the React Native frontend and Express/NestJS backend will be pushed to this repository during the Base Batches 003 program.*
